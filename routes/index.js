@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/politica', function(req, res, next) {
+router.get('/politicaprivacidad', function(req, res, next) {
   res.render('politica');
 });
 
