@@ -1,5 +1,95 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Monoton|Raleway', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+    title ABC Coclear
+  body
+    header
+      nav.navegar
+        ul.menu
+          li
+            a(href='/') HOME
+          li
+            img.logo(src='/images/logo_abc.png')
+          li
+            a(href='/politica') Politica de Privacidad
+      .head_1
+        h1 ABC Coclear
+        p
+          strong Aplicacion para ayudar en la rehabilitacion de niños con implante Coclear
+        .down
+          a(href='#cont')
+            i.fas.fa-angle-down
+    a(href='https://www.freepik.es/fotos-vectores-gratis/fondo' ) Foto de fondo creado por freepik - www.freepik.es
+    section#cont.grid-container
+      .item
+        img(src='/images/img_1.png')
+        h3 Pantalla Inicio de Sesión
+        p
+          | Se utilizó un icono con el nombre de la aplicación, se tienen dos entradas de texto, la primera para ingresar el email y la segunda para la contraseña. En dado caso se han ingresado datos erróneos se despliega un mensaje mostrando sugerencias para llenar los campos.
+        .btn
+          input#watch1(type='button', name='watch1', value='Leer Mas')
+      .item
+        img(src='/images/img_2.png')
+        h3 Pantalla Principal
+        p
+          | Esta pantalla tiene dos botones. El primero “Añadir Pacientes” su función es desplegar otra pantalla para hacer el registro del paciente. El segundo “Ver Lista de Pacientes” despliega una pantalla con la lista de los pacientes registrados. Esta pantalla también cuenta con una opción de configuración.
+        .btn
+          input#watch2(type='button', name='watch2', value='Leer Mas')
+      .item
+        img(src='/images/img_3.png')
+        h3 Pantalla Registro de Paciente
+        p
+          | En esta pantalla el usuario puede registrar a los pacientes. Esta pantalla cuenta con dos entradas de textos. La primera para ingresar el nombre del paciente y la segunda para ingresar la fecha de nacimiento del mismo.
+        .btn
+          input#watch3(type='button', name='watch3', value='Leer Mas')
+      .item
+        img(src='/images/img_4.png')
+        h3 Pantalla Lista de Pacientes
+        p
+          | En esta pantalla el usuario podrá ver una lista de pacientes que él mismo ha registrado. Cuenta con un buscador en el cual el usuario ingresa el nombre del paciente y luego presiona el botón “Buscar” mostrando dicho paciente en dado caso esté registrado. Al seleccionar a un paciente se despliega una pantalla para que el paciente pueda realizar los ejercicios y reproducir los sonidos de la base de datos.
+        .btn
+          input#watch4(type='button', name='watch4', value='Leer Mas')
+      .item
+        img(src='/images/img_5.png')
+        h3 Pantalla de Niveles
+        p
+          | Esta pantalla cuenta con tres opciones de niveles, es decir tres botones con los textos “Nivel Fácil”, “Nivel Intermedio”, “Nivel Avanzado”. Cada nivel cuenta con diferentes tipos de ejercicios. En la parte inferior de la pantalla se muestra una barra de navegación la cual contiene dos opciones. La primera opción es un botón que al darle clic despliega la pantalla en la cual se encuentran los sonidos según el nivel seleccionado. La segunda opción “Ejercicios” despliega una pantalla con los ejercicios disponibles según el nivel.
+        .btn
+          input#watch5(type='button', name='watch5', value='Leer Mas')
+      .item
+        img(src='/images/img_6.png')
+        h3 Pantalla Banco de Sonidos
+        p
+          | Esta pantalla contiene un banco de sonidos distribuidos de manera secuencial los cuales al seleccionar reproducen un sonido de acuerdo al nivel seleccionado anteriormente.
+        .btn
+          input#watch6(type='button', name='watch6', value='Leer Mas')
+      .item
+        img(src='/images/img_7.png')
+        h3 Pantalla seleccion de ejercicios
+        p
+          | Esta pantalla contiene una serie de ejercicios distribuidos de manera secuencial los cuales al seleccionar los redireccionara a una pantalla en la cual se encuantra el sonido y tres posibles opciones.
+        .btn
+          input#watch5(type='button', name='watch5', value='Leer Mas')
+      .item
+        img(src='/images/img_8.png')
+        h3 Pantalla de Ejercicios
+        p
+          | Esta pantalla contiene ejercicios o prácticas en la cual se muestra una pregunta, también contiene un botón que al hacer clic se reproduce un sonido, luego se colocan tres botones con tres posibles opciones de respuesta que el paciente debe seleccionar. En dado caso la seleccionada es incorrecta, se le indica mostrando un mensaje. En dado caso es correcta puede pasar a la siguiente pregunta.
+        .btn
+          input#watch6(type='button', name='watch6', value='Leer Mas')
+    footer
+      .contact_us
+        h3
+          | ¿Quienes somos?
+        p
+          | ABCoclear es una aplicacion creada por un grupo de estudiantes universitarios con el proposito de ayudar en el proceso de rehabilitacion a niños que
+          | han sido sometidos a cirugias de implante coclear.
+          | El objetivo principal es que los niños y niñas puedan tener una herramienta gratuita y de facil acceso que les ayude en el proceso de aprendizaje de lectura y escritura.
+        a(href='https://www.freepik.es/fotos-vectores-gratis/fondo' ) Foto de fondo creado por freepik - www.freepik.es
